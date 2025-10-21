@@ -7,7 +7,7 @@
 <script>
 //Encapsulation Technique 1: closure scope
 
-function createCircle(radius) {
+function createCircle(radius=3) {
   return {
       area: function() {
           return radius * radius * Math.PI;
@@ -18,11 +18,12 @@ function createCircle(radius) {
 var circle1 = createCircle();
 
 //Write console.log here
-
+console.log("Area is "+circle1.area());
+console.log("Radius is "+circle1.radius); 
 
 //Encapsulation Technique 2: private variables
 
-function createCircle(radius) {
+function createCircle(radius=3) {
     var diameter = radius * 2;
 
     return {
@@ -38,7 +39,8 @@ function createCircle(radius) {
 var circle2 = createCircle();
 
 //Write console.log here
-
+console.log("Circumference is "+circle2.circumference());
+console.log("Diameter is "+circle1.Diameter); 
 
 </script>
 
